@@ -60,7 +60,7 @@ func Run(cctx *cli.Context) error {
 	}
 
 	// contact the server and print out the pokemon information
-	ctx, cancel := context.WithTimeout(context.Background(), time.Second)
+	ctx, cancel := context.WithTimeout(context.Background(), 10*time.Second)
 	defer cancel()
 
 	reply, err := client.GetPokemon(ctx, req)
@@ -71,7 +71,8 @@ func Run(cctx *cli.Context) error {
 		return cli.NewExitError(fmt.Errorf("could not find pokemon: %d", pokeid), 86)
 	}
 
-	fmt.Printf("%s\t%s\t%s\n", reply.Id, reply.Name, reply.Weight)
+	fmt.Println("id\tname\tweight")
+	fmt.Printf("%d\t%s\t%d\n", reply.Id, reply.Name, reply.Weight)
 
 	return nil
 }
