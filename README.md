@@ -34,3 +34,5 @@ $ go get -u github.com/golang/protobuf/protoc-gen-go
 - [Protocol Buffes > Language Guide (proto3)](https://developers.google.com/protocol-buffers/docs/proto3)
 - [gRPC Quick Start](https://grpc.io/docs/quickstart/go.html)
 - [PokéAPI](https://pokeapi.co/)
+
+[license]:  https://raw.githubusercontent.com/steenzout/meetup-20180403-grpc/master/LICENSE   "Apache License 2.0"
