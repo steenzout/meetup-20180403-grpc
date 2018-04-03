@@ -1,11 +1,9 @@
-# go-primogen
+# 2018.04.03 Utah Golang Meetup gRPC
 
 [![License](https://img.shields.io/badge/license-Apache%20License%202.0-blue.svg?style=flat)][license]
-[![Build Status](https://travis-ci.org/steenzout/go-primogen.svg?branch=master)](https://travis-ci.org/steenzout/go-primogen/)
-[![Coverage Status](https://coveralls.io/repos/steenzout/go-primogen/badge.svg?branch=master&service=github)](https://coveralls.io/github/steenzout/go-primogen?branch=master)
-[![Go Report Card](https://goreportcard.com/badge/github.com/steenzout/go-primogen)](https://goreportcard.com/report/github.com/steenzout/go-primogen)
-
-[![Project](https://www.openhub.net/p/go-steenzout-primogen/widgets/project_thin_badge.gif)][project]
+[![Build Status](https://travis-ci.org/steenzout/meetup-20180403-grpc.svg?branch=master)](https://travis-ci.org/steenzout/meetup-20180403-grpc/)
+[![Coverage Status](https://coveralls.io/repos/steenzout/meetup-20180403-grpc/badge.svg?branch=master&service=github)](https://coveralls.io/github/steenzout/meetup-20180403-grpc?branch=master)
+[![Go Report Card](https://goreportcard.com/badge/github.com/steenzout/meetup-20180403-grpc)](https://goreportcard.com/report/github.com/steenzout/meetup-20180403-grpc)
 
 ## Prerequisites
 
