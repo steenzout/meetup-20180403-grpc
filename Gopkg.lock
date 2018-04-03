@@ -2,6 +2,12 @@
 
 
 [[projects]]
+  branch = "master"
+  name = "github.com/argandas/gokemon"
+  packages = ["."]
+  revision = "ee1f6a74dcf550f4df37fb32f054f7dfb3ee15e9"
+
+[[projects]]
   name = "github.com/golang/protobuf"
   packages = [
     "proto",
@@ -93,6 +99,6 @@
 [solve-meta]
   analyzer-name = "dep"
   analyzer-version = 1
-  inputs-digest = "c4e6110faff6561ac46c1f58f13d8408827f90fe3b41f3e0039123e51a6941b5"
+  inputs-digest = "0125e6a50ec70b173c74d3e9301f7a6dfa78691f5292df08f0d482d7006ac0ea"
   solver-name = "gps-cdcl"
   solver-version = 1

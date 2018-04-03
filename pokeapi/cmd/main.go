@@ -7,6 +7,7 @@ import (
 	cli "gopkg.in/urfave/cli.v1"
 
 	"github.com/steenzout/meetup-20180403-grpc/pokeapi/cmd/internal/get"
+	"github.com/steenzout/meetup-20180403-grpc/pokeapi/cmd/internal/start"
 )
 
 func main() {
@@ -19,6 +20,11 @@ func main() {
 			Usage:  "get pokemon information",
 			Before: get.ValidateArg,
 			Action: get.Run,
+		},
+		{
+			Name:   "start",
+			Usage:  "start pokeapi gRPC server",
+			Action: start.Run,
 		},
 	}
 
