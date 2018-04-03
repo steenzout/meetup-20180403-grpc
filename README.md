@@ -15,18 +15,51 @@ Also:
 $ go get -u google.golang.org/grpc
 
 $ go get -u github.com/golang/protobuf/protoc-gen-go
+
+$ dep ensure
 ```
 
 ## Structure
 
 - PokéAPI gRPC service: simple RPC
+  - `pokeapi/getrequest.go`: helpers for the `pokeapi.GetRequest` struct.
   - `pokeapi/service.proto`: contains the service definition and the message request and reply.
-  - `pokeapi/service/service.pb.go`: the generated Go code for the service.
-  - `pokeapi/server/`:.
-  - `pokeapi/client/`:.
+  - `pokeapi/service.pb.go`: (generated) Go code for the service.
+  - `pokeapi/cmd/`: PokéAPI command-line interface package.
+  - `pokeapi/pokeapi-cli`: binary to run the PokéAPI command-line interface (OSX).
+  - `pokeapi/pokeapi-cli.linux`: binary to run the PokéAPI command-line interface (Linux).
 - : server-side streaming RPC
 - : client-side streaming RPC
 - : bidirectional streaming RPC
+
+## Build
+
+```bash
+$ make
+```
+
+## Usage
+
+```bash
+$ pokeapi-cli
+NAME:
+   pokeapi-cli - pokeapi-cli is a command-line interface to the PokéAPI.
+
+USAGE:
+   pokeapi-cli [global options] command [command options] [arguments...]
+
+VERSION:
+   0.0.0
+
+COMMANDS:
+     get      get pokemon information
+     start    start pokeapi gRPC server
+     help, h  Shows a list of commands or help for one command
+
+GLOBAL OPTIONS:
+   --help, -h     show help
+   --version, -v  print the version
+```
 
 ## Links
 
