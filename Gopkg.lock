@@ -2,15 +2,10 @@
 
 
 [[projects]]
-  branch = "master"
-  name = "github.com/argandas/gokemon"
-  packages = ["."]
-  revision = "ee1f6a74dcf550f4df37fb32f054f7dfb3ee15e9"
-
-[[projects]]
   name = "github.com/golang/protobuf"
   packages = [
     "proto",
+    "protoc-gen-go/descriptor",
     "ptypes",
     "ptypes/any",
     "ptypes/duration",
@@ -79,6 +74,8 @@
     "metadata",
     "naming",
     "peer",
+    "reflection",
+    "reflection/grpc_reflection_v1alpha",
     "resolver",
     "resolver/dns",
     "resolver/passthrough",
@@ -99,6 +96,6 @@
 [solve-meta]
   analyzer-name = "dep"
   analyzer-version = 1
-  inputs-digest = "0125e6a50ec70b173c74d3e9301f7a6dfa78691f5292df08f0d482d7006ac0ea"
+  inputs-digest = "70f2da14c6ce5baea8dbd21a1cb0992167669b0cd934534fdb567d31950bdd26"
   solver-name = "gps-cdcl"
   solver-version = 1
