@@ -64,7 +64,7 @@ GLOBAL OPTIONS:
 ## Links
 
 - [google/protobuf releases](https://github.com/google/protobuf/releases)
-- [Protocol Buffes > Language Guide (proto3)](https://developers.google.com/protocol-buffers/docs/proto3)
+- [Protocol Buffers > Language Guide (proto3)](https://developers.google.com/protocol-buffers/docs/proto3)
 - [gRPC Quick Start](https://grpc.io/docs/quickstart/go.html)
 - [PokéAPI](https://pokeapi.co/)
 
